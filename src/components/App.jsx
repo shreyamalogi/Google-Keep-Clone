@@ -1,32 +1,45 @@
 
-import React from "react";
-import Header from "./Header";    
+import React, { useState } from "react";
+import Header from "./Header";
 import Footer from "./Footer";
 import Note from "./Note";
-import notes from "../notes";
+import CreateArea from "./CreateArea";
 
-//keep a function which cretes notes and we gonna pass a single note item into it and renders a custom  note component
-//and which will return a note component which will have props
-//this title and content props must be there is notes.js
-//Whenever we want to loop through or map through a dynamic array we must have a key
+function App() {
+  const [notes, setNotes] = useState([]);
 
+  function addNote(newNote) {
+    setNotes(prevNotes => {
+      return [...prevNotes, newNote];
+    });
+  }
 
-function App(){
-    return (
-        <div>
-        <Header />
-        
-        {notes.map ((noteItem) =>
-        <Note
-         key = {noteItem.key}
-         title = {noteItem.title}   
-         content = {noteItem.content}
-        />
-    )}
+  function deleteNote(id) {
+    setNotes(prevNotes => {
+      return prevNotes.filter((noteItem, index) => {
+        return index !== id;
+      });
+    });
+  }
 
-        <Footer />
+  return (
+    <div>
+      <Header />
+      <CreateArea onAdd={addNote} />
+      {notes.map((noteItem, index) => {
+        return (
+          <Note
+            key={index}
+            id={index}
+            title={noteItem.title}
+            content={noteItem.content}
+            onDelete={deleteNote}
+          />
+        );
+      })}
+      <Footer />
     </div>
-    );
+  );
 }
- 
-export default App; 
+
+export default App;
