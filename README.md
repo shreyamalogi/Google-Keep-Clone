@@ -19,7 +19,7 @@ A web application which is a clone of Google keep. Made it by using ``react fram
 
 # Deployment 
 
-deployed to heroku at : https://mygooglekeepclone.herokuapp.com/
+deployed to Netlify at : https://googlekeepnote.netlify.app/
 
 
 
