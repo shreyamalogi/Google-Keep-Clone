@@ -17,6 +17,10 @@ A web application which is a clone of Google keep. Made it by using ``react fram
 3. ``npm start`` Runs the app in the development mode.\
 4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+# Deployment 
+
+deployed to heroku at : https://mygooglekeepclone.herokuapp.com/
+
 
 
 
