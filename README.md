@@ -1,8 +1,8 @@
-# Google Keep Clone
+# 📷🌈 Google Keep Clone 💻
 
 [![GitHub stars](https://img.shields.io/github/stars/shreyamalogi/Google-Keep-Clone.svg?style=social)](https://github.com/shreyamalogi/Google-Keep-Clone/stargazers)
 
-### Project Details: 💻🌐📅✍️
+### Project Details: 🌐📅✍️
 
 - **Functionality:** A web application, a clone of Google Keep, developed using the React framework. 📝🔍
 - **Tech Stack:** `React`, `JavaScript`, `HTML`, `CSS` 🚀💻
