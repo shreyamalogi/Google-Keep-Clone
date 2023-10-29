@@ -92,5 +92,9 @@ Excited about web security spells? Contribute to this magical project and make i
 
 This project is enchanted under the spell of the MIT License. Share the magic responsibly! 🌍💙
 
+MIT License
+
+Copyright (c) 2022 Shreya Malogi
+
 Stay Enchanted! 🧙‍♀️✨
 
